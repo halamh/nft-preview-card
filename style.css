@@ -45,7 +45,8 @@ body {
 }
 
 .hero {
-    min-width: 50%;
+    max-width: 100%;
+    min-height: 50%;
     border-radius: 10px;
 }
 
