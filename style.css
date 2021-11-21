@@ -1,0 +1,108 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --darker-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: "Outfit";
+    font-size: 14px;
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center ;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-blue);
+    gap: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    max-width: 38%;
+    padding: 2em 1.5em 1.5em 1.5em;
+    border-radius: 10px;
+}
+
+.hero {
+    min-width: 50%;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 10%;
+}
+
+.time-coin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0 1.2em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+}
+.author {
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.author p {
+    margin-left: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.coin p, .time p {
+    margin-left: 3px;
+}
+
+h1 {
+    color: white;
+    padding: 1em 0;
+}
+
+strong {
+    padding-left: 2px;
+    font-weight: normal;
+    color: white;
+}
+
+@media only screen and (max-width: 425px){
+    main {
+        width: 100%;
+    }
+    .main-container {
+        
+        max-width: 60%;
+        padding: 2em 1.5em 1.5em 1.5em;
+        border-radius: 10px;
+    }
+}
