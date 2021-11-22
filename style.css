@@ -36,8 +36,6 @@ body {
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
     background-color: var(--dark-blue);
     max-width: 40%;
     padding: 2em 1.5em 1.5em 1.5em;
